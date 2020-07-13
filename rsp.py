@@ -62,7 +62,7 @@ def keepplaying():
         if question == "yes":
             game(player_choice,computer_choice, computer_score, player_score)
             return question
-        if question == "yes" or question == "no":
+        if question != "yes" or question != "no":
             print("invalid response, try again")
             return question
         if question == "q":
